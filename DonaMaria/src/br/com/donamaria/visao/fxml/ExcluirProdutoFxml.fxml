@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane id="BorderPane" prefHeight="470.0" prefWidth="600.0" styleClass="background" stylesheets="@../recurso/css/padrao.css" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.donamaria.controle.ExcluirProdutoControle">
+   <top>
+      <VBox alignment="CENTER" prefHeight="81.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label styleClass="labelTitulo" text="Excluir Produto" />
+         </children>
+      </VBox>
+   </top>
+   <center>
+      <Pane prefHeight="343.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox layoutX="15.0" layoutY="14.0" prefHeight="315.0" prefWidth="568.0" spacing="10.0">
+               <children>
+                  <Label styleClass="labelDeCampos" text="Descricao" />
+                  <TextField fx:id="fieldDescricao" editable="false" prefHeight="35.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <HBox prefHeight="68.0" prefWidth="568.0" spacing="10.0">
+                     <children>
+                        <VBox prefHeight="68.0" prefWidth="252.0">
+                           <children>
+                              <Label styleClass="labelDeCampos" text="Codigo" />
+                              <TextField fx:id="fieldCodigo" prefHeight="35.0">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </TextField>
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="68.0" prefWidth="75.0">
+                           <children>
+                              <Button fx:id="btPesquisar" mnemonicParsing="false" onAction="#pesquisar" prefHeight="60.0" prefWidth="100.0" text="Pesquisar" />
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="68.0" prefWidth="228.0">
+                           <children>
+                              <Label styleClass="labelDeCampos" text="Valor" />
+                              <TextField fx:id="fieldValor" editable="false" prefHeight="35.0">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </TextField>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="71.0" prefWidth="568.0" spacing="10.0">
+                     <children>
+                        <VBox prefHeight="71.0" prefWidth="260.0" spacing="10.0">
+                           <children>
+                              <Label styleClass="labelDeCampos" text="Quantidade cadastrada" />
+                              <TextField fx:id="fieldQuantidadeCadastrada" editable="false" prefHeight="35.0" prefWidth="106.0">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </TextField>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="71.0" prefWidth="296.0" spacing="10.0">
+                           <children>
+                              <Label styleClass="labelDeCampos" text="Quantidade a ser excluida" />
+                              <TextField fx:id="fieldQuantidadeExcluir" prefHeight="35.0" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <Separator prefWidth="200.0" />
+                  <VBox alignment="CENTER" prefHeight="50.0" prefWidth="568.0">
+                     <children>
+                        <Button fx:id="btExcluir" mnemonicParsing="false" onAction="#excluir" prefWidth="200.0" styleClass="textoDosBotoes" text="Excluir" />
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

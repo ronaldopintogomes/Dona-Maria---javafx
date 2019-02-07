@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+
+<BorderPane id="BorderPane" prefHeight="473.0" prefWidth="834.0" styleClass="background" stylesheets="@../recurso/css/padrao.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.102" fx:controller="br.com.donamaria.controle.ListarFuncionariosControle">
+   <top>
+      <VBox alignment="CENTER" prefHeight="94.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label styleClass="labelTitulo" text="Lista de Funcionarios" />
+         </children>
+      </VBox>
+   </top>
+   <center>
+      <TableView fx:id="tabelaFuncionarios" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="colunaIdentidade" editable="false" prefWidth="176.0" text="Identidade" />
+          <TableColumn fx:id="colunaNome" editable="false" prefWidth="441.0" text="Nome" />
+            <TableColumn fx:id="colunaFuncao" editable="false" prefWidth="207.0" text="Funcao" />
+        </columns>
+      </TableView>
+   </center>
+</BorderPane>

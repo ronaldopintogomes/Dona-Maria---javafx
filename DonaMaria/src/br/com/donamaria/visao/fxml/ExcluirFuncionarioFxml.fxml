@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+
+<BorderPane id="BorderPane" prefHeight="492.0" prefWidth="791.0" styleClass="background" stylesheets="@../recurso/css/padrao.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.102" fx:controller="br.com.donamaria.controle.ExcluirFuncionarioControle">
+   <top>
+      <VBox alignment="CENTER" prefHeight="88.0" prefWidth="600.0" styleClass="labelTitulo" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Excluir Funcionario" />
+         </children>
+      </VBox>
+   </top>
+   <center>
+      <TableView fx:id="tabelaFuncionarios" prefHeight="288.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="colunaIdentidade" editable="false" prefWidth="175.0" text="Identidade" />
+          <TableColumn fx:id="colunaNome" editable="false" minWidth="2.0" prefWidth="421.0" text="Nome" />
+            <TableColumn fx:id="colunaFuncao" editable="false" minWidth="0.0" prefWidth="184.0" text="Funcao" />
+        </columns>
+         <contextMenu>
+            <ContextMenu>
+              <items>
+                <MenuItem fx:id="miExcluirFuncionario" mnemonicParsing="false" onAction="#excluir" text="Excluir funcionario" />
+              </items>
+            </ContextMenu>
+         </contextMenu>
+      </TableView>
+   </center>
+</BorderPane>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane id="BorderPane" prefHeight="483.0" prefWidth="621.0" styleClass="background" stylesheets="@../recurso/css/padrao.css" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.donamaria.controle.CadastrarProdutoControle">
+   <top>
+      <VBox alignment="CENTER" prefHeight="87.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label styleClass="labelTitulo" text="Cadastrar Produto" />
+         </children>
+      </VBox>
+   </top>
+   <center>
+      <Pane prefHeight="344.0" prefWidth="621.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox layoutX="20.0" layoutY="22.0" prefHeight="372.0" prefWidth="583.0" spacing="10.0">
+               <children>
+                  <Label styleClass="labelDeCampos" text="Descricao" />
+                  <TextField fx:id="fieldDescricao" prefHeight="35.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <HBox prefHeight="76.0" prefWidth="583.0" spacing="10.0">
+                     <children>
+                        <VBox prefHeight="99.0" prefWidth="309.0" spacing="10.0">
+                           <children>
+                              <Label styleClass="labelDeCampos" text="Valor" />
+                              <TextField fx:id="fieldValor" prefHeight="35.0">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </TextField>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="69.0" prefWidth="268.0" spacing="10.0">
+                           <children>
+                              <Label styleClass="labelDeCampos" text="Codigo" />
+                              <TextField fx:id="fieldCodigo" prefHeight="35.0" prefWidth="270.0">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </TextField>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="56.0" prefWidth="583.0">
+                     <children>
+                        <VBox prefHeight="61.0" prefWidth="180.0">
+                           <children>
+                              <Label styleClass="labelDeCampos" text="Quantidade" />
+                              <TextField fx:id="fieldQuantidade">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </TextField>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <Separator prefWidth="200.0" />
+                  <VBox alignment="BOTTOM_CENTER" prefHeight="64.0" prefWidth="583.0">
+                     <children>
+                        <Button fx:id="btCadastrar" mnemonicParsing="false" onAction="#cadastrar" prefWidth="200.0" styleClass="textoDosBotoes" text="Cadastrar" />
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

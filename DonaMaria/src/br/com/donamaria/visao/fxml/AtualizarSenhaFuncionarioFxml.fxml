@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane id="BorderPane" prefHeight="531.0" prefWidth="524.0" styleClass="background" stylesheets="@../recurso/css/padrao.css" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.donamaria.controle.AtualizarSenhaFuncionarioControle">
+   <top>
+      <VBox alignment="CENTER" prefHeight="88.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label styleClass="labelTitulo" text="Atualizar Senha" />
+         </children>
+      </VBox>
+   </top>
+   <center>
+      <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox layoutX="20.0" layoutY="14.0" prefHeight="421.0" prefWidth="481.0" spacing="10.0">
+               <children>
+                  <Label styleClass="labelDeCampos" text="Identidade" />
+                  <HBox prefHeight="39.0" prefWidth="481.0" spacing="10.0">
+                     <children>
+                        <TextField fx:id="fieldIdentidade" prefHeight="35.0" prefWidth="390.0">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </TextField>
+                        <Button fx:id="btPesquisar" mnemonicParsing="false" onAction="#pesquisar" prefHeight="35.0" prefWidth="80.0" text="Pesquisar" />
+                     </children>
+                  </HBox>
+                  <Label styleClass="labelDeCampos" text="Nome" />
+                  <TextField fx:id="fieldNome" editable="false" prefHeight="35.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <Label styleClass="labelDeCampos" text="Funcao" />
+                  <TextField fx:id="fieldFuncao" editable="false" prefHeight="35.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <Label styleClass="labelDeCampos" text="Nova senha" />
+                  <PasswordField fx:id="fieldNovaSenha" prefHeight="35.0" />
+                  <Separator prefWidth="200.0" />
+                  <VBox alignment="BOTTOM_CENTER" prefHeight="51.0" prefWidth="481.0">
+                     <children>
+                        <Button fx:id="btAtualizarSenha" mnemonicParsing="false" onAction="#atualizar" prefHeight="30.0" prefWidth="200.0" styleClass="textoDosBotoes" text="Atualizar" />
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

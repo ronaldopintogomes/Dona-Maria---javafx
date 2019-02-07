@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane id="BorderPane" prefHeight="400.0" prefWidth="600.0" styleClass="background" stylesheets="@../recurso/css/padrao.css" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.donamaria.controle.ListarProdutosControle">
+   <top>
+      <VBox alignment="CENTER" prefHeight="87.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label styleClass="labelTitulo" text="Lista de Produtos" />
+         </children>
+      </VBox>
+   </top>
+   <center>
+      <TableView fx:id="tabelaProdutos" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="colunaCodigo" editable="false" prefWidth="144.0" text="Codigo" />
+          <TableColumn fx:id="colunaDescricao" editable="false" minWidth="0.0" prefWidth="306.0" text="Descricao" />
+            <TableColumn fx:id="colunaValor" editable="false" prefWidth="75.0" text="Valor" />
+            <TableColumn fx:id="colunaQuantidade" editable="false" prefWidth="75.0" text="Quantidade" />
+        </columns>
+      </TableView>
+   </center>
+</BorderPane>

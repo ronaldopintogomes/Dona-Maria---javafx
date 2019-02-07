@@ -1,0 +1,47 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 16/03/2017, 22:47:33
+    Author     : Ronaldo
+*/
+
+.background {
+    /*#ff6347*/
+    -fx-background-color: #00ff7f;
+}
+
+.panelLogin {
+    -fx-background-color: #00ff7f;
+    -fx-background-radius: 5.0;
+    -fx-border-width: 1px;
+    -fx-border-color: #000000;
+    -fx-border-radius: 5.0;
+}
+
+.labelTitulo {
+    -fx-font-family: System;
+    -fx-font-size: 36;
+    -fx-font-weight: bold;
+}
+
+.labelFuncionarioSessao {
+    -fx-font-family: System;
+    -fx-font-size: 15;
+    -fx-font-weight: bold;
+}
+
+.labelDeCampos {
+    -fx-text-fill: #000000;
+    -fx-font-family: System;
+    -fx-font-size: 15;
+    -fx-font-weight: bold;
+}
+
+.textoDosBotoes {
+    -fx-font-family: System;
+    -fx-font-size: 18;
+    -fx-font-weight: bold;
+}

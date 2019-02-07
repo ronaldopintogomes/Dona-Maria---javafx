@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane id="BorderPane" prefHeight="670.0" prefWidth="1100.0" styleClass="background" stylesheets="@../recurso/css/padrao.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.102" fx:controller="br.com.donamaria.controle.MenuCaixaControle">
+   <center>
+      <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox layoutX="14.0" layoutY="27.0" prefHeight="583.0" prefWidth="1000.0">
+               <children>
+                  <HBox prefHeight="99.0" prefWidth="1000.0" spacing="10.0">
+                     <children>
+                        <VBox prefHeight="76.0" prefWidth="201.0">
+                           <children>
+                              <Label text="Codigo">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="fieldCodigo" onAction="#pesquisar" prefHeight="50.0">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </TextField>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="90.0" prefWidth="600.0">
+                           <children>
+                              <Label text="Descricao">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="fieldDescricao" editable="false" prefHeight="50.0">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </TextField>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="76.0" prefWidth="170.0">
+                           <children>
+                              <Label text="Valor Unitario">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="fieldValorUnitario" editable="false" prefHeight="50.0">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </TextField>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="419.0" prefWidth="1000.0" spacing="10.0">
+                     <children>
+                        <VBox prefHeight="424.0" prefWidth="810.0" spacing="10.0">
+                           <children>
+                              <TableView fx:id="tabelaCompra" prefHeight="400.0" prefWidth="674.0">
+                                <columns>
+                                  <TableColumn fx:id="colunaItem" editable="false" prefWidth="75.0" text="Item" />
+                                  <TableColumn fx:id="colunaDescricao" editable="false" prefWidth="501.99998474121094" text="Descricao" />
+                                    <TableColumn fx:id="colunaValorUnitario" editable="false" prefWidth="115.0" text="Valor Unitario" />
+                                    <TableColumn fx:id="colunaQuantidade" editable="false" prefWidth="112.0" text="Quantidade" />
+                                </columns>
+                              </TableView>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="417.0" prefWidth="170.0">
+                           <children>
+                              <Label text="Valor Total">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="fieldValorTotal" editable="false" prefHeight="50.0">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </TextField>
+                              <VBox prefHeight="169.0" prefWidth="170.0" />
+                              <Label text="Valor Recebido">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="fieldValorRecebido" prefHeight="50.0">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </TextField>
+                              <Label text="Troco">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="fieldTroco" editable="false" prefHeight="50.0">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </TextField>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <VBox prefHeight="89.0" prefWidth="234.0">
+                           <children>
+                              <Label text="F - Finalizar venda">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label text="L - Login">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+   </center>
+   <top>
+      <VBox alignment="CENTER" prefHeight="54.0" prefWidth="1100.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="lbFuncionarioSessao" styleClass="labelFuncionarioSessao" />
+         </children>
+      </VBox>
+   </top>
+</BorderPane>
